@@ -24,7 +24,7 @@ menu = st.sidebar.selectbox("Menu",["Home","Plot"])
 # 若側邊欄選擇"Home"
 if menu == "Home":
     
-    st.title("我的第一個Streamlit Web App")
+    st.title("Albert的第一個Streamlit Web App")
     # 介面分三欄位呈現
     col1, col2, col3 = st.columns(3)
     with col1: 
@@ -69,7 +69,7 @@ import plotly.express as px
 def main():
     st.title("Streamlit的動態視覺圖")
     st.subheader("用Streamlit 呈現 Plotly")
-    df = pd.read_csv("data/sales_data_sample.csv")
+    df = pd.read_csv("sales_data_sample.csv")
     df = df.iloc[0:10, ::]
     
     
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 else:  
     st.title("Streamlit的動態視覺圖")
     st.subheader("用Streamlit 呈現 Plotly")
-    df = pd.read_csv("data/sales_data_sample.csv")
+    df = pd.read_csv("sales_data_sample.csv")
     df = df.iloc[0:10, ::]
     
     
